@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MKFILMS Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Hintergrund-Animation -->
+    <div class="background-animation">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    <!-- Glas-Gitter im Hintergrund -->
+    <div class="grid-overlay"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-container">
+                <h1 class="logo">MKFILMS HUB</h1>
+                <div class="logo-underline"></div>
+            </div>
+            <p class="tagline">Sammelstelle aller MKFILMS-Projekte</p>
+        </div>
+
+        <!-- Karten-Grid -->
+        <div class="site-grid">
+            <!-- Karte 1: MKFILMS -->
+            <div class="site-card" onclick="openSite('https://mkylandia.github.io/Films/')">
+                <div class="card-glow"></div>
+                <div class="site-icon">
+                    <i class="fa-solid fa-film"></i>
+                </div>
+                <div class="site-info">
+                    <h3>MKFILMS</h3>
+                    <p class="site-description">
+                        Die erste Premium-Film-Collection mit Kinogo-Integration. Hier findest du das ursprüngliche Portfolio.
+                    </p>
+                    <button class="visit-btn">
+                        Besuchen <i class="btn-icon fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Karte 2: MKFILMS2 -->
+            <div class="site-card" onclick="openSite('https://mkylandia.github.io/Films2/')">
+                <div class="card-glow"></div>
+                <div class="site-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="site-info">
+                    <h3>MKFILMS2</h3>
+                    <p class="site-description">
+                        Die erweiterte Sammlung mit zusätzlichen Filmen, neuem Design und interaktiven Effekten.
+                    </p>
+                    <button class="visit-btn">
+                        Besuchen <i class="btn-icon fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Karte 3: MKFILMS3 (angepasster Link) -->
+            <div class="site-card" onclick="openSite('https://films3.vercel.app/')">
+                <div class="card-glow"></div>
+                <div class="site-icon">
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <div class="site-info">
+                    <h3>MKFILMS3</h3>
+                    <p class="site-description">
+                        Alle bisherigen Filme plus zusätzliche Links – perfekt für deine komplette Übersicht.
+                    </p>
+                    <button class="visit-btn">
+                        Besuchen <i class="btn-icon fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <p>© 2025 MKFILMS HUB • Alle Rechte vorbehalten</p>
+                <div class="social-links">
+                    <span class="social-icon">📱</span>
+                    <span class="social-icon">🎬</span>
+                    <span class="social-icon">⭐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
